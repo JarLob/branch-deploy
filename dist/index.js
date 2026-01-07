@@ -40849,7 +40849,7 @@ async function contextCheck(context) {
   if (context.eventName !== 'issue_comment' || pr == null || pr == undefined) {
     core.saveState('bypass', 'true')
     core.warning(
-      'This Action can only be run in the context of a pull request comment'
+      '------This Action can only be run in the context of a pull request comment'
     )
     return false
   }
